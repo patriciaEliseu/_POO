@@ -2,11 +2,11 @@ package electronic;
 
 public class Application {
     public static void main(String[] args) {
-        System.out.println("Iniciando sistema...");
+        Television television = new Television("Phillips","LCD", 32);
 
-        Television television = new Television();
+        television.turnOn();
+        television.turnOff();
 
-        System.out.println("Finalizando sistema...");
-
+        System.out.println(television.info());
     }
 }
